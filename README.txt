@@ -1,8 +1,6 @@
-# Project Euler Solutions
+ Project Euler Solutions in CPP
 
-### In CPP
-
-### Answers
+Answers
 Completed Problems
 
 Problem # | Answer
