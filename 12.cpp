@@ -1,5 +1,4 @@
 #include <iostream>
-#include "math.h"
 int count(int n);
 int main(){
 	int num = 0, i = 1;
