@@ -8,6 +8,7 @@ int main(){
 		i++;		
 	}
 	std::cout<<num<<std::endl;	
+return 0;
 }
 int count(int n){
 	int c=0;
