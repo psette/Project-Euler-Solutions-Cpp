@@ -24,4 +24,5 @@ int main(){
 		result+=bignum[i];
  	}
 	std::cout<<result<<std::endl;
+    return 0;
 }
