@@ -12,9 +12,7 @@ bool isPrime (int n){
 }
 bool moreprimenums(int a, int b){
 	int n = 0;
-	while( isPrime( pow( n,2 ) + a * n + b ) ){
-		n++;
-	}
+	while( isPrime( pow( n,2 ) + a * n + b ) )	n++;
 	if(n > maxcount){
 		maxcount = n;
 		return true;
