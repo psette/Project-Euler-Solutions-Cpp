@@ -5,7 +5,6 @@ std::vector<std::string> result;
 void mergesort(std::vector<std::string>& input, int low, int high) {
     if (low >= high - 1)
     	return;
-
 	int mid = (low + high) / 2;
     mergesort(input, low, mid);
     mergesort(input, mid, high);
@@ -13,7 +12,6 @@ void mergesort(std::vector<std::string>& input, int low, int high) {
 	int h1 = mid;
 	int l2 = mid;
 	int h2 = high;
-
 	std::vector<std::string> temp;
     while (l1 < h1 && l2 < h2)
     	if (input[l1] < input[l2])

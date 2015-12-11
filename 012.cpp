@@ -6,7 +6,7 @@ int main(){
 		num += i;
 		i++;		
 	}
-	std::cout<<num<<std::endl;	
+	std::cout<< num <<std::endl;	
 return 0;
 }
 int count(int n){
