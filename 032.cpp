@@ -19,9 +19,8 @@ void mergesort(std::string& sort, int low, int high){
 		temp += sort[l1++];
 	while ( l2 < h2 )
 		temp += sort[l2++];
-	for(int i = 0; i < temp.size(); i++){
+	for(int i = 0; i < temp.size(); i++)
 		sort[i + low] = temp[i];
-	}
 }
 bool isPandigital(std::string n){
     if(n.length() < 9) return false;

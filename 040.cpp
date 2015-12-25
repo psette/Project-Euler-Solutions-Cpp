@@ -10,7 +10,7 @@ int main(){
 				target *= 10;
 				result *=  temp % 10;
 				break;
-			}
+			}	
 			temp /= 10;	
 		}
 	}
