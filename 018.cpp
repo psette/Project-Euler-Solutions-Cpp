@@ -1,6 +1,4 @@
 #include <iostream>
-bool inbounds(int position, int i);
-int findmax(int** vals, int position,int i);
 int main(){
 	int vals[15][15];
 	int sum = 0, place = 0, maxfirst = 0, x = 14;

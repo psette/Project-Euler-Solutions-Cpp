@@ -2,12 +2,9 @@
 #include <string>
 #include <fstream>
 #include <vector>
-
 void merge(std::vector<std::string>& input, int low, int high, int mid);
 void mergesort(std::vector<std::string>& input, int low, int high) {
-    if (low >= high - 1)
-    	return;
-3
+    if (low >= high - 1)	return;
 	int mid = (low + high) / 2;
     mergesort(input, low, mid);
     mergesort(input, mid, high);
@@ -28,13 +25,10 @@ void merge(std::vector<std::string>& input, int low, int high, int mid){
 			temp.push_back(input[l1++]);
 		else
 			temp.push_back(input[l2++]);
-
     while (l1 < h1)
     	temp.push_back(input[l1++]);
-
     while (l2 < h2)
     	temp.push_back(input[l2++]);
-
     for (int i = 0; i < temp.size(); ++i)
     	input[i + low] = temp[i];
 }
@@ -53,16 +47,14 @@ std::vector<std::string> read(){
 }
 int scorename(std::string input){
 	int result=0;
-	for ( int j = 1; j  < input.length()-1; j++){
+	for ( int j = 1; j  < input.length()-1; j++)
 		result += (int)input.at(j) - 64;
-	}
 	return result;
 }
 int scoretot(std::vector<std::string> names){
 	int sum=0;
-	for ( int i = 0; i < names.size(); i++ ){
-		sum += (i+1)* scorename(names[i]);
-	}
+	for ( int i = 0; i < names.size(); i++ )
+		sum += ( i +  1 ) * scorename(names[i]);
 	return sum;
 }
 int main(){
