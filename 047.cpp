@@ -10,18 +10,19 @@ bool isPrime(int n ){
 }
 int hasfourprimes( int num ){
 	int prime_factors = 0;
-	if( num % 2 == 0) {
-		std::cout<< num <<std::endl;		
-		prime_factors++;
+	bool prime_fac = false;
+	while( num % 2 == 0) {
+		prime_fac = true;
 		num = num / 2;
 	}
-	while(num % 2 == 0)	num /= 2;
+	if(prime_fac) prime_factors++;
 	for( int divisor = 3; divisor <= sqrt(num); divisor += 2){
+		prime_fac = false;
 		while( num % divisor == 0){
-			std::cout<< num <<std::endl;		
-			prime_factors++;
+			prime_fac = true;
 			num = num / divisor;
 		}
+		if(prime_fac) prime_factors++;	
 	}
 	if( num > 2 ) prime_factors++;
 	return (prime_factors >= 4);
