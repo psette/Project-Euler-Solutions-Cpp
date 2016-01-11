@@ -13,7 +13,7 @@ int main(){
 		if(isPrime( i )) primes.push_back( i++ );
 	for(int i = 0; i < primes.size(); i++) {
 		unsigned int sum = 0, j = i;
-		while(sum < primes[primes.size() - 1]) {
+		while(sum < primes[ primes.size() - 1 ]) {
 			sum += primes[j++];
 			if ( sum > bigPrime && j - i > conseq_primes && isPrime(sum) ) {
 				bigPrime = sum;
